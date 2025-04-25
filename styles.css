@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+header {
+    background-color: #050d53;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+nav {
+    margin: 1rem 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+section {
+    padding: 2rem;
+    text-align: center;
+}
+footer {
+    background-color:  #050d53;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.project-box {
+    display: block;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    width: 150px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.project-box:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.button {
+    display: block;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    width: 150px;
+    transition: transform 0.3s, background-color 0.3s;
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Add pointer cursor for buttons */
+}
+
+.button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}

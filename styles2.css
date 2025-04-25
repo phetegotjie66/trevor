@@ -1,0 +1,304 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ffffff; /* Set link color */
+    margin: 0 15px; /* Add horizontal spacing between links */
+    font-size: 16px; /* Adjust font size */
+    letter-spacing: 1px; /* Add spacing between letters */
+}
+
+nav {
+    text-align: center; /* Center the navigation links */
+    margin-bottom: 20px; /* Add spacing below the navigation */
+}
+
+nav a:hover {
+    color: #0077b5; /* Change color on hover */
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.intro {
+    flex: 2;
+}
+
+.intro h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar section {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.learn-more, .browse-portfolio {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.button {
+    display: block;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 12px; /* Carved/rounded corners */
+    width: 150px;
+    transition: transform 0.2s, background-color 0.3s;
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Pointer cursor for buttons */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.button:hover {
+    background-color: #555;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.button:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
+
+.profile-pic-container {
+    text-align: center; /* Center the image */
+    margin-top: 20px;
+    background-color: transparent; /* Ensure the container has no background */
+}
+
+.profile-pic {
+    width: 100%; /* Make the image responsive */
+    max-width: 400px; /* Limit the maximum width */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensure the entire image content is displayed */
+    border-radius: 12px; /* Optional: Add rounded corners */
+    background-color: transparent; /* Ensure the image background is transparent */
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.about-box {
+    border: 2px solid #333; /* Add a border around each box */
+    border-radius: 12px; /* Rounded corners for the box */
+    padding: 20px;
+    background-color: #000; /* Set the background color to black */
+    color: #fff; /* Set the text color to white for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about-box h3 {
+    margin: 0 0 10px 0;
+    text-align: center;
+    color: #fff; /* Set the heading color to white */
+}
+
+.about-box p {
+    margin: 0;
+    text-align: center;
+    color: #fff; /* Set the paragraph text color to white */
+}
+
+.circle {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #333; /* Add a border around the circle */
+    border-radius: 50%; /* Make the paragraph circular */
+    background-color: #000; /* Set the background color to black */
+    color: #fff; /* Set the text color to white for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.dropdown {
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+}
+
+.dropdown-content {
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #222; /* Background for the content */
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-content.active {
+    display: block; /* Show content when active */
+    background-color: #444; /* Highlight background */
+    color: #fff; /* Highlight text color */
+    transform: scale(1.05); /* Slightly enlarge */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.about-box.active .dropdown-content {
+    display: block; /* Show content when active */
+}
+
+#education {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.education-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.education-item h3 {
+    margin-bottom: 10px;
+    color: #0077b5;
+}
+
+.education-item p {
+    margin: 5px 0;
+    color: #333;
+}
+
+#skills {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.skill-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.skill-item h3 {
+    margin-bottom: 10px;
+    color: #0077b5;
+}
+
+.skill-item p {
+    margin: 0;
+    color: #333;
+}
+h2 {
+    color: #333; /* Change the color of h2 elements to match the theme */
+}
+
+.social-media {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #ffffff; /* Default icon color */
+    text-decoration: transparent;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #0077b5; /* Highlight color on hover */
+}
